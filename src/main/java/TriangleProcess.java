@@ -41,7 +41,7 @@ public class TriangleProcess {
                         sideA = Double.parseDouble(list.get(1).trim());
                         sideB = Double.parseDouble(list.get(2).trim());
                         sideC = Double.parseDouble(list.get(3).trim());
-                    } catch (NumberFormatException ex) {
+                    } catch (NumberFormatException exception) {
                         throw new NumberFormatException("Could not parse sides into double.");
                     }
                     triangle = new Triangle(name, sideA, sideB, sideC);
